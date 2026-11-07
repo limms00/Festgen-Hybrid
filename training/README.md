@@ -1,0 +1,3 @@
+# Historical training evidence
+
+`edm_transfer_*` documents the actual 200-update score-transfer run from the Full-DMD parent. `hybrid_*` documents the subsequent 300-update run from that trained 200-update checkpoint. `full_dmd_config.json` documents the earlier 1,000-update parent. These source snapshots and logs are evidence, not a self-contained retraining pipeline: they reference original research helpers, train data, teacher checkpoints, and absolute server paths that are intentionally not distributed. Optimizer states were not retained for these stages. Reproducing the exact training history requires those missing dependencies, original environment and appropriate data permissions.

@@ -1,0 +1,26 @@
+{
+  "arm": "edm",
+  "seed": 680101,
+  "steps": 200,
+  "batch": 16,
+  "micro": 4,
+  "warmup": 100,
+  "fake_updates": 2,
+  "generator_lr": 1e-06,
+  "fake_lr": 0.0001,
+  "EMA": 0.99,
+  "anchor_to_initialized_DMD": 1.0,
+  "CFG": 2.0,
+  "timestep_uniform": [
+    50,
+    596
+  ],
+  "class_distribution": "empirical image frequencies of overnight/train.txt",
+  "common_initialization_sha256": "053195fe1da3c4f884cb34feaaeb878030744403768f3a7fc7a4fe5ea3c99d5a",
+  "edm_sha256": "816638eab17241bcabf07eadcbf49f3ee2f0c03b8f76e8d83d811ee15cf437cc",
+  "vp_sha256": "b5c09c58954352f71291a2c4421c5f542ac6abb392acda4074c1f118ab9c3a27",
+  "teacher_exposed_dev_reference": true,
+  "precision": "BF16 forward FP32 math",
+  "checkpoint_policy": "temporary /run only; no optimizer saved",
+  "training_source": "new controlled VP-DMD score-transfer experiment"
+}
